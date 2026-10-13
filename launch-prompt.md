@@ -1,6 +1,6 @@
 # Launch Prompt — paste into Codex CLI to start the build
 
-You are building a static marketing website for a new B2B data-licensing company. The complete handover is in this repo. Read everything before writing any code, in this order:
+You are building a static marketing website for a new B2B data-licensing company. The complete handover is in your working directory (this repo, cloned locally — do not clone it again or fetch it from GitHub; the local files are canonical). Read everything before writing any code, in this order:
 
 1. `brief.md` — positioning, audiences, sitemap, funnel architecture, trust architecture, language rules, design direction, open decisions (§9)
 2. `design-reference_glassnode.md` — the design system. This is law.
