@@ -9,6 +9,10 @@ You are building a static marketing website for a new B2B data-licensing company
 5. `naming.md` — naming context. The company name is TBD: use `[COMPANY NAME]` everywhere a name appears.
 6. `research/` — market context for you, not copy sources. Pewter Data's site is a conversion-architecture reference only; never copy its language. Note (corrected Oct 13): Pewter HAS a partner program — never claim otherwise.
 
+## Session skill roster
+
+Active for this build: `frontend-design` (with the override below), `webapp-testing`, `superfuture/design-review` (critic only, used in step 3). Disabled for this session: `ponytail`, `brand-guidelines`, `web-artifacts-builder`, and any second taste/design skill. If a skill's taste defaults conflict with the pinned design direction below, the brief wins.
+
 ## Design direction (pinned — wins over any skill defaults)
 
 Institutional, monochrome, Glassnode-style. Inter for everything. 2px radii. Hairline borders. Alternating light and dark bands. Pale lavender accent, used sparingly. Charts, diagrams, and typography are the primary visual language, not photography.
@@ -32,6 +36,6 @@ Skill override: if the frontend-design skill's denylist bans Inter or hairline-r
 
 1. First output a token plan (palette, type scale, spacing, radii, border treatments) plus an ASCII layout sketch per page. Do not write code until I approve the plan.
 2. Build the static site into `./dist/`.
-3. Screenshot loop: screenshot every page with Playwright, then critique the screenshots in a separate pass (never judge your own output in the pass that generated it). Fix, repeat. 3–5 passes, then stop.
+3. Screenshot loop: screenshot every page with Playwright, then run the `superfuture/design-review` skill against the screenshots as the critic (a separate pass — never judge your own output in the pass that generated it). Apply its blocking and important findings. Fix, repeat. 3–5 passes, then stop.
 4. Pre-flight before finishing: grep the output for banned patterns (gradients, uppercase-tracking eyebrows, invented stats) and confirm every placeholder is bracketed and listed.
 5. Final report: what was built, the full list of open placeholders, and every brief ambiguity you resolved with a guess (list each guess explicitly).
