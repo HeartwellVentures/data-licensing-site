@@ -1,41 +1,48 @@
-# Launch Prompt — paste into Codex CLI to start the build
+# Launch Prompt (v2). Paste into Codex CLI to start the build.
 
-You are building a static marketing website for a new B2B data-licensing company. The complete handover is in your working directory (this repo, cloned locally — do not clone it again or fetch it from GitHub; the local files are canonical). Read everything before writing any code, in this order:
+You are building a static marketing website for a new B2B data-licensing firm. The complete handover is in your working directory (this repo, cloned locally; do not clone it again or fetch it from GitHub; the local files are canonical). Read everything before writing any code, in this order:
 
-1. `brief.md` — positioning, audiences, sitemap, funnel architecture, trust architecture, language rules, design direction, open decisions (§9)
-2. `design-reference_glassnode.md` — the design system. This is law.
-3. `copy-deck.md` — page copy. Use it as written; do not rewrite the voice.
-4. `image-spec.md` — imagery rules.
-5. `naming.md` — naming context. The company name is TBD: use `[COMPANY NAME]` everywhere a name appears.
-6. `research/` — market context for you, not copy sources. Pewter Data's site is a conversion-architecture reference only; never copy its language. Note (corrected Oct 13): Pewter HAS a partner program — never claim otherwise.
+1. `brief.md`: positioning, audiences, sitemap, funnel, trust architecture, language rules, open decisions (section 9).
+2. `design-direction.md`: composition and components below the hero. This is law below the hero.
+3. `design-reference_glassnode.md`: tokens (color, type, spacing, radii). Where it conflicts with `design-direction.md` below the hero, `design-direction.md` wins.
+4. `reference/`: a working build of Home and Partners. It is the visual target below the hero. Match its composition and behavior; improve its implementation.
+5. `copy-deck.md`: page copy. Use it as written; do not rewrite the voice. Never reintroduce anything under "Retired lines."
+6. `image-spec.md`: imagery and motion rules.
+7. `naming.md`: the company name is TBD. Use `[COMPANY NAME]` everywhere a name appears.
+8. `research/`: market context for you, never a copy source. Pewter Data's site is a conversion-architecture reference only.
 
 ## Session skill roster
 
-Active for this build: `frontend-design` (with the override below), `webapp-testing`, `superfuture/design-review` (critic only, used in step 3). Disabled for this session: `ponytail`, `brand-guidelines`, `web-artifacts-builder`, and any second taste/design skill. If a skill's taste defaults conflict with the pinned design direction below, the brief wins.
+Active for this build: `frontend-design` (with the override below), `webapp-testing`, `superfuture/design-review` (critic only, used in step 3). Disabled: `ponytail`, `brand-guidelines`, `web-artifacts-builder`, and any second taste or design skill. If a skill's defaults conflict with the pinned direction below, the brief wins.
 
-## Design direction (pinned — wins over any skill defaults)
+## Design direction (pinned; wins over any skill defaults)
 
-Institutional, monochrome, Glassnode-style. Inter for everything. 2px radii. Hairline borders. Alternating light and dark bands. Pale lavender accent, used sparingly. Charts, diagrams, and typography are the primary visual language, not photography.
+Hero: keep the supplied ATRIUM / Motion Sites counter-moving photo mosaic. Do not redesign the hero imagery. Hero copy comes from copy deck v2.
 
-Hero (first pass): keep the supplied ATRIUM / Motion Sites counter-moving photo mosaic. Do not redesign the hero imagery.
+Below the hero: the page reads like a well-drafted engagement letter. Inter only. 2px radii. Hairline rules. Ledgers, a terms table, document specimens, and one inline SVG diagram are the visual language. Cards only for real objects (widget, document, form). One accent (`#e2e7fc`), used only to mark replaced values or "us."
 
-Skill override: if the frontend-design skill's denylist bans Inter or hairline-rule layouts to "force distinctiveness," the brief's pinned direction wins on those axes, per the skill's own rule ("the brief's own words always win"). Apply the denylist only to axes the brief leaves open.
+Skill override: if the frontend-design skill's denylist bans Inter or hairline layouts, the brief's pinned direction wins on those axes, per the skill's own rule ("the brief's own words always win"). Apply the denylist to axes the brief leaves open.
 
-## Anti-slop rules (hard bans)
+## Hard bans
 
-- No all-caps eyebrows above every section. No split-header section patterns. No icon tiles over headings. No italic-serif display shortcuts. No `A · B` meta strings. No fake chrome (div-built dashboards or terminals). No purple/blue gradients.
-- No vague quality words driving design choices ("make it premium" is the slop default). Every visual choice must trace to the brief or the design reference.
-- Never invent facts. Company name, partner %, partner cap, and buyer naming are OPEN DECISIONS (brief §9). Use bracketed placeholders: `[COMPANY NAME]`, `[PARTNER %]`, `[PARTNER CAP]`. Do not invent statistics, testimonials, client logos, or case studies.
+- No uppercase eyebrows, no tracked-out labels, no `A · B` meta strings, no arrows appended to links, no single-word highlights in headings, no icon tiles, no gradients, no fake dashboard chrome.
+- No scroll-triggered animation.
+- No invented facts. Open items stay bracketed: `[COMPANY NAME]`, `[BUYER]`, `[PARTNER %]`, `[PARTNER CAP]`, `[FOUNDER]`, `[TITLE]`, `[BIO LINE]`, `[EMAIL]`, `[PHONE]`, `[ADDRESS]`, `[PARENT ENTITY]`. Keep every `[CONFIRM: ...]` sentence visible in the build so it cannot ship unnoticed.
+- No figure that is not in the copy deck's "Verified figures" table, and none marked Hold or Never.
 
 ## Language rules
 
-- Companies LICENSE their data. Never "sell." Never "data broker" language anywhere on the site.
-- Buyers are "frontier AI labs." Name Micro1 only where the copy deck already does; otherwise use `[BUYER]`.
+- Companies LICENSE their records. Never "sell." Never "data broker."
+- The licensee is `[BUYER]`. Do not write that frontier AI labs license the owner's records.
+- No em dashes anywhere.
 
 ## Process (follow exactly)
 
-1. First output a token plan (palette, type scale, spacing, radii, border treatments) plus an ASCII layout sketch per page. Do not write code until I approve the plan.
-2. Build the static site into `./dist/`.
-3. Screenshot loop: screenshot every page with Playwright, then run the `superfuture/design-review` skill against the screenshots as the critic (a separate pass — never judge your own output in the pass that generated it). Apply its blocking and important findings. Fix, repeat. 3–5 passes, then stop.
-4. Pre-flight before finishing: grep the output for banned patterns (gradients, uppercase-tracking eyebrows, invented stats) and confirm every placeholder is bracketed and listed.
-5. Final report: what was built, the full list of open placeholders, and every brief ambiguity you resolved with a guess (list each guess explicitly).
+1. Output a token plan and an ASCII layout per page, mapped to `design-direction.md` and `reference/`. Do not write code until I approve it.
+2. Build the static site into `./dist/` (Home, Partners, Refer, About, plus privacy and partner-terms stubs).
+3. Screenshot loop: screenshot every page with Playwright at 1440px and 390px, then run `superfuture/design-review` against the screenshots as the critic in a separate pass. Apply blocking and important findings. Fix, repeat. 3 to 5 passes, then stop.
+4. Pre-flight before finishing:
+   - grep the output for em dashes, `gradient`, `text-transform: uppercase`, `letter-spacing` on labels, and every line under "Retired lines" in the copy deck;
+   - confirm every number on every page appears in "Verified figures";
+   - confirm every placeholder and `[CONFIRM]` item is bracketed and listed.
+5. Final report: what was built, the full list of open placeholders and `[CONFIRM]` items, and every brief ambiguity you resolved with a guess (list each one).

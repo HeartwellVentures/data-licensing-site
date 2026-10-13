@@ -1,45 +1,53 @@
 # Build Repo: Data-Licensing Website
 
 ## What this is
-The complete execution package for our data-licensing company website. Any frontier
-model or skilled agent should be able to build the site from these files alone.
+The complete execution package for our data-licensing firm's website. Any
+frontier model or skilled agent should be able to build the site from these
+files alone.
 
 ## The business (one paragraph)
-Companies **license** (never "sell") heavily anonymized copies of their operational
-records to frontier AI labs, and keep ownership of the originals. We originate the
-deals two ways: directly with companies, and through **partners** (CPAs, brokers,
-bankers, attorneys, consultants, IT providers) who introduce business owners from
-their networks and earn a share of each closed deal. Our anchor licensing buyer is
-Micro1. Full background: `research/space-sweep_2026-10-13.md`.
+Established US companies **license** (never "sell") de-identified copies of
+their operational records and keep ownership of the originals. We arrange each
+deal from first call to payment. We originate deals two ways: directly with
+owners, and through **partners** (CPAs, brokers, bankers, attorneys,
+consultants, IT providers) who introduce owners and earn a disclosed share,
+paid from our fee. Our anchor licensee is Micro1 (`[BUYER]` in copy). Background:
+`research/space-sweep_2026-10-13.md`.
+
+## The brand job
+An institution an owner can trust and a CPA can forward without hesitation.
 
 ## How to use this repo
-1. Read `brief.md` first. It is the master brief: positioning, audiences, sitemap,
-   funnel, trust architecture, language rules.
-2. Build copy from `copy-deck.md`. Do not invent deal figures; the allowed numbers
-   are listed there.
-3. Build visuals from `design-reference_glassnode.md` (below the hero) and
-   `image-spec.md` (every image, chart, and animation, with placement).
-4. Company name: see `naming.md` for the shortlist. If building before the name is
-   chosen, use the placeholder `[COMPANY]`.
-5. `research/pewter-teardown.md` documents the competitor funnel we are
-   out-executing. Reference, do not copy.
+1. `REVIEW.md`: what changed in v2 and why. Read once.
+2. `brief.md`: master brief. Positioning, audiences, sitemap, funnel, trust
+   architecture, language rules, open decisions.
+3. `design-direction.md`: composition and components below the hero.
+4. `design-reference_glassnode.md`: tokens (color, type, spacing, radii).
+5. `reference/`: working build of Home and Partners. The visual target.
+6. `copy-deck.md`: all copy. Use as written. Only the figures in "Verified
+   figures" may appear. Never reuse anything under "Retired lines."
+7. `image-spec.md`: imagery and motion.
+8. `naming.md`: name shortlist. Until chosen, use `[COMPANY NAME]`.
+9. `research/`: context only, never a copy source.
 
 ## Build path
-1. GPT 6.1 (or equivalent frontier model) designs and builds the site from this repo.
+1. Codex CLI (`launch-prompt.md`) builds the site from this repo, matching
+   `reference/` below the hero.
 2. Nia reviews against `brief.md`, integrates, and pushes to GitHub.
-3. Deploy to Cloudflare; attach the new domain once naming is decided.
-4. Rule: Nia builds herself only on a **separate branch**, and only after this repo
-   is solid.
+3. Deploy to Cloudflare; attach the domain once naming is decided.
+4. Rule: Nia builds herself only on a **separate branch**, and only after this
+   repo is solid.
 
 ## Key constraints (non-negotiable)
-- The word is **license**, never **sell**. The company keeps ownership. Say both,
-  every time it matters.
-- Copy must be understandable by a 55-year-old owner of a 60-person logistics firm.
-  No jargon, no AI-hype adjectives.
-- Never invent deal figures, payouts, or partner names. Allowed numbers are listed
-  in `copy-deck.md` under "Verified numbers."
+- **License**, never **sell**. The company keeps ownership. Say both, every
+  time it matters.
+- Copy must survive a 55-year-old owner of a 60-person logistics firm, and her
+  CPA reading over her shoulder. No jargon, no AI-hype adjectives.
+- Never invent deal figures, payouts, partner names, or terms. Unverified
+  statements stay bracketed as `[CONFIRM: ...]` until checked against the
+  signed buyer agreement.
+- Original language only. v1 copy reused a competitor's lines; v2 removed them.
 - No em dashes anywhere in copy.
-- Hero section: keep the ATRIUM/Motion Sites mosaic exactly as supplied for the
-  first pass (see `image-spec.md`). Everything below the hero follows the
-  Glassnode design reference.
+- Hero: keep the ATRIUM/Motion Sites mosaic as supplied for the first pass.
+  Below the hero: `design-direction.md` and `reference/`.
 - Photography below the hero only where `image-spec.md` explicitly allows it.

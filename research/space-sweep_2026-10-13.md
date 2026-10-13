@@ -74,7 +74,7 @@
 - **Trust strip:** "No files to start. No cost to you. You keep your originals."
 - **Funnel:** (1) hero with interactive payout estimator (employees + years in business → dollar range via "Get my offer"); (2) proof stack — deal cards ($650K freight broker, $450K engineering, $350K accounting), market table ($1B buyer commitment, $10M Spirit Airlines bid), Forbes CEO quote, "Fifteen firms paid in 2026" list ($110K-$1.2M) with an honesty footnote that figures are unverified publisher statements; (3) education — "The labs have read the internet. They have never seen how your business runs"; (4) before/after de-id demo email ("the work survives and the people disappear"); (5) qualification (20+ people, 3+ years records, US) + 8-question FAQ; (6) 4-step close: request offer (2 min) → confidential call (1 business day) → written offer → de-identify, deliver, get paid. Owner effort framed as ~1 hour.
 - **Best FAQ answers:** "Is this real money, or a pitch?" → "Real. Our licensing partner has paid $350,000 to $650,000 to firms of 60 to 100 people." / "What does this cost me?" → "Nothing, at any stage. Our fee is paid by our licensing partner when a deal closes. If there's no deal, there's no fee." / "Do I lose my data?" → "No. The deal is a license of an agreed, de-identified copy. Your original files and your ownership of them don't change."
-- **Partner/referral program: none found.** Gap Jay's model exploits.
+- **Partner/referral program:** exists (10% of the business's payout, $100K cap, 12-month first-to-register credit). Corrected Oct 13; the earlier "none found" was wrong.
 - **Red flag:** the paying "licensing partner" is never named; no team, funding, or lab relationships verifiable.
 
 ### Troveo (troveo.ai) — direct rival, pivoted into company data
@@ -136,7 +136,11 @@ Page: https://www.troveo.ai/resources/sell-data-to-ai-companies ("How to Sell Da
 
 ---
 
-## 7. Language Harvest (verbatim, copy-deck ready)
+## 7. Language Harvest (verbatim, for reference only)
+
+> **Do not use any line below on our site.** These are competitors' words, quoted
+> to study how the lane talks. v1 of the copy deck reused several of them; v2
+> removed them. See "Retired lines" in `copy-deck.md`.
 
 **Licensing vs selling:**
 - "Your old email and files are worth six figures to AI labs. We handle the entire sale." — Pewter, https://pewterdata.com/

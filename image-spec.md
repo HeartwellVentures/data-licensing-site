@@ -28,54 +28,57 @@ Industry-specific hero imagery (consulting, agtech, insurance, etc.) is a
 LATER pass. Placeholders stay for now.
 
 ## Placement map (below the hero)
+Composition for every section is in `design-direction.md`. Imagery is limited
+to what is listed here.
 
 ### Home
-1. **Estimator** — the widget IS the visual. Style it like the reference's hero
-   chart widget: white card, 1px `#dedfe1` border, 2px radius, layered soft
-   shadow. Two sliders (employees, years), large output figure in 700-weight
-   Inter. Output number animates (count-up) when sliders move. No image.
-2. **Proof points** — three monochrome stat cards (`$1B`, `$10M`, "hundreds of
-   thousands"), each with a 1-line source attribution in 12px muted type.
-   Typographic only. Optional: a thin horizontal timeline of market deals
-   (2024-2026) as hairline line-art if space allows.
-3. **De-identification demo** — side-by-side document specimens. Style as
-   redacted documents: monospace-ish type blocks on white cards, with the
-   "after" card showing `[PLACEHOLDER]` tokens in the lavender wash. This is
-   the single strongest trust asset on the page; give it room. No photography.
-4. **How it works** — numbered 01-05, hairline vertical connector, type only.
-5. **Process (four steps)** — four cards in a row on desktop, 1px borders,
-   step number in 12px uppercase muted. Type only.
-6. **Qualification** — checklist with hairline check icons. Type only.
-7. **Offer form** — the form is the visual. White card, 1px border, 2px radius
-   inputs per the reference.
+1. **Eligibility check.** The widget is the visual: white card, 1px `#dedfe1`
+   border, 2px radius, the layered soft shadow from the reference. The
+   published-tiers panel beside it is three hairline rows. No image.
+2. **Market figures.** A ledger on the dark band: figure, what it is, source.
+   Typographic only. No stat cards, no icons.
+3. **Why records have value.** A two-column table (record, what it shows).
+   Typographic only.
+4. **Safeguards.** The specimen document with the Original / Licensed copy
+   toggle. Replaced values render as `#e2e7fc` labels. This is the strongest
+   trust asset on the site; give it the widest column on the page. No photography.
+5. **How it works.** Five numbered steps on a single hairline. Type only.
+6. **Terms at a glance.** A plain table, then the who-pays-whom diagram as
+   inline SVG: four nodes (Your firm, [COMPANY NAME], [BUYER], Your advisor),
+   hairline strokes, `#e2e7fc` fill on the [COMPANY NAME] node only.
+7. **A fair question.** Dark statement band. Type only.
+8. **Who this is for.** Two columns of hairline rows. Type only.
+9. **Request form.** The form is the visual.
 
 ### Partners (/partners)
-1. **Commission estimator** — same widget treatment as the payout estimator.
-2. **"People owners already trust"** — four profession cards (CPA, broker,
-   banker, attorney/consultant/IT) with simple line icons. **PERMISSION ASK:**
-   replace icons with small black-and-white documentary portraits of
-   professionals at work (one per card, 4:3, heavy grain to match hero). This
-   is the one place photography would materially lift trust, because partners
-   are people buying into people. Needs Jay's green light; default to icons.
-3. **How it works** — same numbered treatment as Home.
+1. **Hero.** Copy left, commission estimate widget right. No mosaic on this
+   page.
+2. **Who partners with us.** Four rows. Default: no icons, no photos.
+   **PERMISSION ASK (unchanged):** small black-and-white documentary portraits
+   of professionals at work, one per row, 4:3, heavy grain to match the hero.
+   Needs Jay's green light.
+3. **Disclosure.** A second specimen document: the one-page referral disclosure
+   the owner receives. Same treatment as the Home specimen.
+4. **How it works.** Four numbered steps on a hairline.
+5. **Commitments.** Dark statement band.
 
 ### Refer (/partners/refer)
-- Form only. No imagery needed.
+- Form only. No imagery.
 
 ### About (/about)
-- One diagram: the deal flow. Three nodes (Company -> [COMPANY] -> AI lab)
-  with two return arrows (payment to company, commission to partner).
-  Hairline line-art on white, lavender wash behind the [COMPANY] node. Build
-  as inline SVG so it stays crisp.
+- Reuse the who-pays-whom SVG from Home.
+- Leadership: black-and-white portrait per person, 1:1, same grain as the hero,
+  **if** Jay approves named leadership with photos. Otherwise names and bios only.
 
 ## Animation spec
 - Hero mosaic: continuous CSS marquee only (per supplied spec).
-- Estimator numbers: count-up animation on input change (vanilla JS, ~600ms,
-  ease-out).
-- Scroll reveals: cards and sections fade + rise 12px on entering viewport,
-  staggered 80ms. One-shot, not looping.
-- Buttons: no animation beyond a 150ms background darkening on hover.
-- `prefers-reduced-motion: reduce`: disable marquee, count-ups, and reveals.
+- Specimen toggle: replaced values cross-fade, 200ms. The only orchestrated
+  motion below the hero.
+- Commission estimate: value updates on input. No count-up.
+- Accordion: plus rotates to a cross, 150ms.
+- Buttons: 150ms background darkening on hover.
+- No scroll reveals anywhere (removed in v2).
+- `prefers-reduced-motion: reduce`: disable the marquee and all transitions.
 
 ## Placeholders
 Where a final asset is not yet commissioned, render a labeled gray box
