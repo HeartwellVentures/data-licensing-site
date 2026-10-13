@@ -55,7 +55,7 @@ works, what we take, what we reject.
 - The anonymous payer model itself. Our buyer is named (Micro1) with verifiable
   facts.
 - "We handle the entire sale" in the H1. We say license, always.
-- No partner program exists on their site. That is the white space we occupy.
+- CORRECTION (2026-10-13): a partner program does exist on their site (10% of the business's payout, $100k cap per business; 12-month first-to-register credit; partner application and introduction forms). The earlier "no partner program" claim was false and is struck. Our white space is a named buyer and partner-led distribution, not the absence of a partner program.
 
 ## Design notes (their aesthetic, for contrast)
 Golds, blacks, beiges; Jay's read: "vibe coded, institutional." We go the

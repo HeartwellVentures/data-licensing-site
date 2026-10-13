@@ -109,7 +109,7 @@ Criteria: credible, real lab relationships, partner-friendly economics, reachabl
 4. **Protege** — Top-tier credibility (a16z, ex-Datavant CEO); but health/media-weighted, less SMB-operational overlap. Action: exploratory only unless their lane widens.
 5. **Wirestock** — Proves labs pay brokers at scale ($15M paid), but creator lane, not company data. Not a sign-up target; use as proof point.
 
-Not recommended for direct sign-up: Pewter (anonymous payer, no partner program), Vana/Kled/Verb/Versos/Ocean (consumer or unproven lanes).
+Not recommended for direct sign-up: Pewter (anonymous payer; has a partner program: 10% of the business's payout, $100k cap per business), Vana/Kled/Verb/Versos/Ocean (consumer or unproven lanes).
 
 ---
 
@@ -119,7 +119,7 @@ Tradeoff: signing under someone teaches you deal mechanics, buyer expectations, 
 
 1. **Defined.ai Data Partners track** — Best classroom: the most mature partner onboarding in the space (Jira intake, data eval, compliance checks). Learn their qualification and packaging standards, then apply them to your own direct deals.
 2. **Troveo's partner program** — Learn licensor-side mechanics from a marketplace that pays on every sale ("the first sale is the floor"). Their 6-step process is a ready-made SOP template.
-3. **Pewter Data (as an observer, not a partner)** — No partner program exists, but their site is the best-executed conversion funnel in the lane. Study the estimator, proof stack, FAQ, and risk-reversal language; do not route deals through an unnamed payer.
+3. **Pewter Data (as an observer, not a partner)** — A partner program exists (10% of the business's payout, $100k cap per business, 12-month first-to-register credit), but the payer is anonymous. Their site is the best-executed conversion funnel in the lane. Study the estimator, proof stack, FAQ, and risk-reversal language; do not route deals through an unnamed payer.
 4. **A working data broker practitioner** — No verified individual names surfaced in this sweep. Do not sign under anyone you cannot verify has real lab payouts.
 
 ---
